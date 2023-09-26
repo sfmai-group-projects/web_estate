@@ -1,0 +1,318 @@
+:root {
+    --main-color: #EEE1D4;
+    --white: #fff;
+    --rgb-scroll:-webkit-linear-gradient(0deg, rgba(168,195,34,1) 0%, rgba(253,187,45,1) 100%);
+    --black: #000;
+  }
+
+  .header-list {
+    max-width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+.header__main-list{
+    width: 1700px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 26px;
+}
+
+.header__main-list nav{
+    display: flex;
+    height: 150px;
+    max-width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header__main-list ul{
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+}
+
+.header__main-list a{
+    font-size: 30px;
+    color: var(--white-text);
+}
+
+.header__main-list img{
+    zoom: 70%;
+}
+
+.logo-list {
+    zoom: 70%;
+    margin-top: -10px;
+}
+
+.prev__story {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.prev__story div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.prev__story p {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.prev__story img {
+    height: 500px;
+    widows: 100%;
+}
+
+.footing__house {
+    margin: 0 auto;
+    margin-top: 370px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.footing__house-imblock {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+.footing__house-imblock::before{
+    content: '';
+    position: absolute;
+    background-image: url("/assets/img/2list/exterior2.jpg");
+    width: 900px;
+    height: 520.097px;
+    border-radius: 20px;
+    z-index: -100;
+    left: 40%;
+    bottom: 41%;
+    background-size: cover;
+}
+
+.footing__house-imblock img {
+    width: 900px;
+    height: 520.097px;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.footing__house-im1{
+    width: 900px;
+    height: 520.097px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.footing__house-txt{
+    display: flex;
+    margin: 0 auto;
+    width: 1587px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.footing__house-txt p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.home_place{
+    margin-top: 40px;
+    width: 96%;
+    display: flex;
+    background-color: var(--white);
+    height: 800.769px;
+    justify-content: space-between;
+}
+
+.home_place-imtxt img{
+    width: 650.064px;
+    height: 700.383px;
+}
+
+.home_place-imtxt {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.home_place-txt{
+    width: 634px;
+    height: 100%;
+    font-size: 40px;
+}
+
+.church_place{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    height: 800.769px;
+    justify-content: space-between;
+}
+
+.church_place-imtxt img{
+    width: 600.064px;
+    height: 700.383px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.church_place-imtxt {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.church_place-txt{
+    width: 634px;
+    height: 100%;
+    font-size: 40px;
+    text-align: end;
+}
+
+.man__place{
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 20px;
+    height: 100%;
+}
+
+.man-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.man__text-title p{
+    width: 1507px;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.man__txtportrait {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.man__txtportrait img {
+    width: 780px;
+    height: 780px;
+    max-width: 100%;
+}
+
+.man__txtportrait p {
+    text-align: end;
+    width: 400px;
+    height: 100%;
+    font-size: 38px;
+}
+
+.man__text-last {
+    margin: 0 auto;
+    display: flex;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.war__title{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.war-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.war-blocks img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.war-blocks p {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer{
+    height: 50x;
+    width: 100%;
+}
+
+.footer-block{
+    background-color:   var(--black);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__text{
+    color: var(--white);
+    font-size: 26px;
+}
+
+.footer-main nav{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+}
+
+.footer-main ul{
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.footer-main a{
+    font-size: 36px;
+    color: var(--white-text);
+}
+
+.footer-main li{
+    margin-top: 17px;
+}

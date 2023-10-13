@@ -5,57 +5,6 @@
     --black: #000;
   }
 
-  .header-list {
-    max-width: 100%;
-    height: 80px;
-    background: rgba(0, 0, 0, 0.50);
-    position: fixed;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
-.header__main-list{
-    width: 1700px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 100%;
-    margin-top: 26px;
-}
-
-.header__main-list nav{
-    display: flex;
-    height: 150px;
-    max-width: 100%;
-    justify-content: space-between;
-    display: flex;
-}
-
-.header__main-list ul{
-    list-style: none;
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 1600px;
-}
-
-.header__main-list a{
-    font-size: 30px;
-    color: var(--white-text);
-}
-
-.header__main-list img{
-    zoom: 70%;
-}
-
-.logo-list {
-    zoom: 70%;
-    margin-top: -10px;
-}
-
 .prev__story {
     display: flex;
     margin: 0 auto;
@@ -81,47 +30,64 @@
     widows: 100%;
 }
 
+.footer__house-imgcont {
+    max-width: 1000px;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    
+}
+
 .footing__house {
     margin: 0 auto;
-    margin-top: 370px;
+    margin-top: 50px;
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footing__house-imblock {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
-    position: relative;
-    width: 80%;
-}
-
-.footing__house-imblock::before{
-    content: '';
-    position: absolute;
-    background-image: url("/assets/img/2list/exterior2.jpg");
-    width: 900px;
-    height: 520.097px;
-    border-radius: 20px;
-    z-index: -100;
-    left: 40%;
-    bottom: 41%;
     background-size: cover;
-}
-
-.footing__house-imblock img {
-    width: 900px;
-    height: 520.097px;
-    border-radius: 20px;
-    z-index: 100;
-}
-
-.footing__house-im1{
-    width: 900px;
-    height: 520.097px;
-    border-radius: 20px;
+    position: absolute;
     max-width: 100%;
+    width: 800px;
+    height: 100%;
+    max-height: 520px;
+    border-radius: 10px;
+}
+
+.footing__house-imblockN1 {
+    background-image: url("/assets/img/2list/exterior1.jpeg");
+    right: 30%;
+    top: 30%;
+    z-index: 1;
+    opacity: 1;
+    scale: 105%;
+    transition: scale 0.4s ease-in-out, opacity 0.4s ease-in-out ;
+    will-change: opacity;
+}
+
+.footing__house-imblockN2 {
+    background-image: url("/assets/img/2list/exterior2.jpg");
+    left: 30%;
+    bottom: 30%;
+    opacity: 0.65;
+    transition: z-index 0.1s step-start, scale 0.4s ease-in-out, opacity 0.4s ease-in-out ;
+    will-change: opacity;
+}
+
+.footing__house-imblockN2:hover {
+    z-index: 1;
+    opacity: 1;
+    scale: 105%;
+}
+.footing__house-imblockN2:hover + .footing__house-imblockN1{
+    opacity: 0.65;
+    scale: 100%;
+    z-index: -1;
+    transition: z-index 0.1s step-end, scale 0.4s ease-in-out, opacity 0.4s ease-in-out ;
 }
 
 .footing__house-txt{
@@ -139,7 +105,7 @@
 
 .home_place{
     margin-top: 40px;
-    width: 96%;
+    width: 100%;
     display: flex;
     background-color: var(--white);
     height: 800.769px;
@@ -154,7 +120,7 @@
 .home_place-imtxt {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -278,13 +244,15 @@
     background-color:   var(--black);
     width: 100%;
     height: 100%;
+    
 }
 
 .footer-main{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .footer__text{

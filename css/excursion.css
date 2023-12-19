@@ -82,9 +82,23 @@
     overflow: hidden;
 }
 
-.slider-container .check img {
+.video{
     width: 700px;
+    max-width: 70%;
+    height: 380px;
+    
+    border-radius: 20px;
+}
+
+.slider-container .check img {
+    height: 420px;
     max-width: 700px;
+}
+
+.chirch{
+    max-width: 100%;
+    width: 700px;
+    height: 500px;
 }
 
 .slider-container .check-before {
@@ -94,6 +108,11 @@
 .slider-container .check-after{
     width: 100px;
     z-index: 200;
+}
+
+.check-before img{
+    height: 420px;
+    
 }
 
 .slider-container .dr-circle {
@@ -247,6 +266,10 @@
 
     .video-cont {
         height: 400px;
+    }
+
+    .video{
+        height: 200px;
     }
 }
 

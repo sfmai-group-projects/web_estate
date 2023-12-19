@@ -32,6 +32,7 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 .map div {
@@ -42,6 +43,16 @@
     border-radius: 30px;
     overflow: hidden;
 }
+
+.map script {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    width: 900px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
 
 .footer{
     height: 50x;
@@ -91,4 +102,37 @@
 
 .footer-main li{
     margin-top: 17px;
+}
+
+@media(max-width:1080px){
+    .footer{
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+    .map div {
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        width: 90%;
+        border-radius: 30px;
+        overflow: hidden;
+        height: 400px;
+    }
+    
+    .map script {
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        width: 900px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .prev__contacts p{
+        font-size: 3rem;
+    }
+    .prev__contacts{
+        margin-bottom: 10px;
+    }
 }

@@ -1,4 +1,8 @@
-(function($) {
+
+
+
+(
+    function($) {
     var $dragMe1 = $('#dr1'),
     $container1 = $("#sl1"),
     $viewBefore1 = $("#c1");
@@ -109,3 +113,5 @@
         }, 'slow', 'linear');
     }
 })(jQuery);
+
+

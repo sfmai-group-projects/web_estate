@@ -35,6 +35,10 @@
     width: 5px;
     height: 5px;
   }
+
+  .vklad{
+    color: #EEE1D4;
+  }
   
   .body::-webkit-scrollbar-track {
     background: var(--main-color);
